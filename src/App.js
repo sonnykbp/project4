@@ -5,15 +5,46 @@ import {
   Link,
   Redirect
 } from "react-router-dom"
-import './App.css';
+import axios from "axios"
+import './App.css'
+import Dashboard from './Components/Dashboard/Dashboard'
 
 class App extends Component {
+  constructor(props){
+    super(props)
+    this.state = {
+      posts: []
+    }
+  }
+
+  componentDidMount(){
+    axios.get("http://localhost:3001/api/categories").then((response) => {
+      console.log(response.data);
+      this.setState({
+        posts: response.data
+      })
+    })
+  }
   render() {
     return (
       <Router>
-      <div>
-        <h1>Hello World</h1>
-      </div>
+        <div>
+          <nav>
+            <Link to="/home">Home</Link>
+            <Link to="/categories">Swap</Link>
+          </nav>
+
+          <main>
+            <Route
+              path="/home"
+              render={ () => {
+                return(
+                  <Dashboard posts={this.state.posts}/>
+                )
+              }}
+            />
+          </main>
+        </div>
       </Router>
     );
   }

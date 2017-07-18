@@ -8,6 +8,8 @@ import {
 import axios from "axios"
 import './App.css'
 import Dashboard from './Components/Dashboard/Dashboard'
+import About from './Components/About/About'
+import Home from './Components/Home/Home'
 import Post from './Components/Post/Post'
 import SinglePost from './Components/SinglePost/SinglePost'
 
@@ -33,6 +35,7 @@ class App extends Component {
           <nav>
             <Link to="/home">Home</Link>
             <Link to="/categories">Swap</Link>
+            <Link to="/about">About</Link>
           </nav>
 
           <main>
@@ -40,7 +43,23 @@ class App extends Component {
               path="/home"
               render={ () => {
                 return(
+                  <Home />
+                )
+              }}
+            />
+            <Route
+              path="/categories"
+              render={ () => {
+                return(
                   <Dashboard posts={this.state.posts}/>
+                )
+              }}
+            />
+            <Route
+              path="/about"
+              render={ () => {
+                return(
+                  <About />
                 )
               }}
             />

@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom"
+import {
+  Link,
+  Route }
+from "react-router-dom"
+import SinglePost from '../SinglePost/SinglePost'
 
 class Post extends Component {
   constructor(props){
@@ -9,20 +13,22 @@ class Post extends Component {
     }
   }
   render(){
-    let singlepost = this.state.post.posts.map((post, indexKey)=>{
-      console.log(post);
+    let singlepost = this.state.post.posts.map((item, indexKey)=>{
+      let itemroute = `/categories/${this.state.post.type}/${item.item_name}`
       return(
         <div key={indexKey}>
-          <p>{post.item_name}</p>
-          <p>{post.description}</p>
-          <p>{post.location}</p>
-          <img src={post.image_url} alt="{post.item_name}"/>
+          <Link to={{
+            pathname: itemroute,
+            state: {item: item}
+          }}>{item.item_name}</Link>
+
         </div>
       )
     })
     return(
       <div>
         {singlepost}
+
       </div>
     )
   }

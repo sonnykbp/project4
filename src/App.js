@@ -9,6 +9,7 @@ import axios from "axios"
 import './App.css'
 import Dashboard from './Components/Dashboard/Dashboard'
 import Post from './Components/Post/Post'
+import SinglePost from './Components/SinglePost/SinglePost'
 
 class App extends Component {
   constructor(props){
@@ -46,6 +47,10 @@ class App extends Component {
             <Route
               path="/categories/:type"
               component={Post}
+            />
+            <Route
+              path="/categories/:type/:item_name"
+              component={SinglePost}
             />
           </main>
         </div>

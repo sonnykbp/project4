@@ -8,6 +8,7 @@ import {
 import axios from "axios"
 import './App.css'
 import Dashboard from './Components/Dashboard/Dashboard'
+import Post from './Components/Post/Post'
 
 class App extends Component {
   constructor(props){
@@ -19,7 +20,6 @@ class App extends Component {
 
   componentDidMount(){
     axios.get("http://localhost:3001/api/categories").then((response) => {
-      console.log(response.data);
       this.setState({
         posts: response.data
       })
@@ -42,6 +42,10 @@ class App extends Component {
                   <Dashboard posts={this.state.posts}/>
                 )
               }}
+            />
+            <Route
+              path="/categories/:type"
+              component={Post}
             />
           </main>
         </div>

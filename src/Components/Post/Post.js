@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import {
-  Link,
-  Route }
+  Link }
 from "react-router-dom"
-import SinglePost from '../SinglePost/SinglePost'
+// import SinglePost from '../SinglePost/SinglePost'
 
 class Post extends Component {
   constructor(props){

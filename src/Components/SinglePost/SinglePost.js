@@ -8,7 +8,6 @@ class SinglePost extends Component {
     }
   }
   render(){
-    console.log(this.state.item);
     return(
       <div>
         <h2>{this.state.item.item_name}</h2>

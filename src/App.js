@@ -57,11 +57,7 @@ class App extends Component {
             />
             <Route
               path="/about"
-              render={ () => {
-                return(
-                  <About />
-                )
-              }}
+              component={About}
             />
             <Route
               path="/categories/:type"
@@ -70,6 +66,12 @@ class App extends Component {
             <Route
               path="/categories/:type/:item_name"
               component={SinglePost}
+            />
+            <Route
+              path="/*"
+              render={() => {
+                return <Redirect to="/home" />
+              }}
             />
           </main>
         </div>

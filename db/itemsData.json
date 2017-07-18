@@ -1,0 +1,118 @@
+[
+  {
+    "type": "Electronics",
+    "posts": [
+      {
+      "location": "Washington DC",
+      "description": "2014 15in MacBook Pro.",
+      "image_url": "https://cnet1.cbsistatic.com/img/wa3E07AL5oV2kw_BLMG8U8wU1Uw=/770x433/2014/08/04/1b0a7d81-3bf3-4b6d-89e3-eedb5cef511c/apple-macbook-pro-with-retina-display-15-inch-july-2014-product-photos11.jpg",
+      "item_name": "MacBook Pro"
+      },
+      {
+      "location": "Northern Virginia",
+      "description": "2007 Classic iPod. Comes with 3000+ songs.",
+      "image_url": "https://i.amz.mshcdn.com/HwdLOMrryBwKpn8qH4NjluNaA1U=/fit-in/850x850/http%3A%2F%2Fmashable.com%2Fwp-content%2Fgallery%2Fthe-evolution-of-the-apple-ipod%2F08classic_front.jpg",
+      "item_name": "iPod Classic"
+      },
+      {
+      "location": "Northern Virginia",
+      "description": "2014 Samsung SmartTV. Small crack.",
+      "image_url": "http://www.220-electronics.com/media/catalog/product/s/a/samsung-ua55eh6000-multi-system-tv.jpg",
+      "item_name": "Samsung TV"
+      },
+      {
+      "location": "Washington DC",
+      "description": "Samsung Galaxy S III 4G Android Phone, Blue 32GB.",
+      "image_url": "https://images-na.ssl-images-amazon.com/images/G/01/wireless/detail-page/RM_ML_SS_GlxyS3_Blue_Front-Dandln-O25in.jpg",
+      "item_name": "Samsung Galaxy S3"
+      }
+    ]
+  },
+  {
+    "type": "Furniture",
+    "posts": [
+      {
+      "location": "Washington DC",
+      "description": "Cozy grey couch for free.",
+      "image_url": "http://cozycouchsf.com/wp-content/uploads/2016/03/main-image.jpg",
+      "item_name": "Grey Couch"
+      },
+      {
+      "location": "Northern Virginia",
+      "description": "Never used black computer desk.",
+      "image_url": "http://www.ikea.com/PIAimages/0461352_PE607513_S5.JPG",
+      "item_name": "Black Computer Desk"
+      },
+      {
+      "location": "Northern Virginia",
+      "description": "Dining room table set for 6.",
+      "image_url": "https://content.haycdn.com/mgen/master:WIT275.jpg",
+      "item_name": "Classy Dining Table Set"
+      },
+      {
+      "location": "Washington DC",
+      "description": "Cool kitchen bar stools for 2.",
+      "image_url": "https://images.cb2.com/is/image/CB2/ReverbStoolsGrpS15_16x9/web_zoom_furn_hero/150904112020/reverb-bar-stools.jpg",
+      "item_name": "Kitchen Bar Stools"
+      }
+    ]
+  },
+  {
+    "type": "Digital Media",
+    "posts": [
+      {
+      "location": "Washington DC",
+      "description": "The Lord of the Rings Trilogy Bluray Set Extended Edition.",
+      "image_url": "https://i.ytimg.com/vi/BALvG38Txwc/maxresdefault.jpg",
+      "item_name": "Lord of the Rings Bluray Set"
+      },
+      {
+      "location": "Northern Virginia",
+      "description": "Custom-made hard cover Harry Potter Book Set.",
+      "image_url": "http://wizardsandwhatnot.com/files/2016/02/Harry-Potter-bookset.jpg",
+      "item_name": "Harry Potter Book Set"
+      },
+      {
+      "location": "Washington DC",
+      "description": "100+ Xbox 360 Games for free.",
+      "image_url": "https://img.wonderhowto.com/img/01/14/63485389782652/0/make-your-xbox-360-games-region-free.w1456.jpg",
+      "item_name": "Xbox 360 Games"
+      },
+      {
+      "location": "Washington DC",
+      "description": "PS3 with 2 controllers.",
+      "image_url": "http://www.wikihow.com/images/4/4e/Fix-the-PS3-White-Lines-Step-7-Version-2.jpg",
+      "item_name": "PS3"
+      }
+    ]
+  },
+  {
+    "type": "Clothes",
+    "posts": [
+      {
+      "location": "Washington DC",
+      "description": "Cool sweater bro.",
+      "image_url": "https://cdn.shopify.com/s/files/1/0209/1522/products/sweatshirts-ocean-wave-sweater-1_1024x1024.jpg?v=1496807144",
+      "item_name": "Ocean Waves Sweater"
+      },
+      {
+      "location": "Northern Virginia",
+      "description": "Cool Watermelon sweater girl.",
+      "image_url": "https://cdn.shopify.com/s/files/1/0209/1522/products/sweatshirts-watermelon-sweater-1_1024x1024.jpg?v=1496810964",
+      "item_name": "Watermelon Sweater"
+      },
+      {
+      "location": "Northern Virginia",
+      "description": "Limited wear. Stretchy.",
+      "image_url": "http://hr0ah34zbrtz43ik40i9ko1c.wpengine.netdna-cdn.com/wp-content/uploads/2012/06/american-flag-cutoffs81.jpg",
+      "item_name": "Denim Shorts"
+      },
+      {
+      "location": "Washington DC",
+      "description": "Grey unisex tshirt.",
+      "image_url": "https://cdn.shopify.com/s/files/1/0999/7142/products/L_T_1024x1024.jpg?v=1477687859",
+      "item_name": "Billy! Tshirt"
+      }
+    ]
+  }
+]

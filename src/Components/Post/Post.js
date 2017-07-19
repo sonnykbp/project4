@@ -26,7 +26,8 @@ class Post extends Component {
     })
     return(
       <div>
-        {singlepost}
+        <div>{singlepost}</div>
+
 
       </div>
     )

@@ -12,6 +12,7 @@ import About from './Components/About/About'
 import Home from './Components/Home/Home'
 import Post from './Components/Post/Post'
 import SinglePost from './Components/SinglePost/SinglePost'
+import SearchContainer from './Components/SearchContainer/SearchContainer'
 import './App.css'
 
 class App extends Component {
@@ -44,7 +45,10 @@ class App extends Component {
               exact path="/home"
               render={ () => {
                 return(
+                  <div>
                   <Home />
+                  <SearchContainer posts={this.state.posts}/>
+                </div>
                 )
               }}
             />

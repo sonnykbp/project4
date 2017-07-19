@@ -1,5 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  /*font-family: 'Open Sans', sans-serif;*/
+
+}
+
+.background {
+  opacity: 0.5;
+  background-image: url('/public/6.jpg');
+  background-size: cover;
 }

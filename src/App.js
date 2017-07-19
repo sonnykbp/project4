@@ -12,6 +12,7 @@ import About from './Components/About/About'
 import Home from './Components/Home/Home'
 import Post from './Components/Post/Post'
 import SinglePost from './Components/SinglePost/SinglePost'
+import './App.css'
 
 class App extends Component {
   constructor(props){
@@ -32,7 +33,7 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <nav>
+          <nav className="navbar">
             <Link to="/home">Home</Link>
             <Link to="/categories">Swap</Link>
             <Link to="/about">About</Link>
@@ -40,7 +41,7 @@ class App extends Component {
 
           <main>
             <Route
-              path="/home"
+              exact path="/home"
               render={ () => {
                 return(
                   <Home />
@@ -48,7 +49,7 @@ class App extends Component {
               }}
             />
             <Route
-              path="/categories"
+              exact path="/categories"
               render={ () => {
                 return(
                   <Dashboard posts={this.state.posts}/>
@@ -56,15 +57,15 @@ class App extends Component {
               }}
             />
             <Route
-              path="/about"
+              exact path="/about"
               component={About}
             />
             <Route
-              path="/categories/:type"
+              exact path="/categories/:type"
               component={Post}
             />
             <Route
-              path="/categories/:type/:item_name"
+              exact path="/categories/:type/:item_name"
               component={SinglePost}
             />
             <Route

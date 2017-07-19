@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Link }
+  NavLink }
 from "react-router-dom"
 // import SinglePost from '../SinglePost/SinglePost'
 
@@ -16,10 +16,10 @@ class Post extends Component {
       let itemroute = `/categories/${this.state.post.type}/${item.item_name}`
       return(
         <div key={indexKey}>
-          <Link to={{
+          <NavLink exact to={{
             pathname: itemroute,
             state: {item: item}
-          }}>{item.item_name}</Link>
+          }}>{item.item_name}</NavLink>
 
         </div>
       )

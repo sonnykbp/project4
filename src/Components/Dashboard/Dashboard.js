@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 
 class Dashboard extends Component {
   render(){
@@ -8,15 +8,17 @@ class Dashboard extends Component {
       return(
 
         <div key={indexKey}>
-          <p><Link to={{
+          <p><NavLink exact to={{
             pathname: showroute,
             state: {type: post}
-          }}>{post.type}</Link></p>
+          }}>{post.type}</NavLink></p>
         </div>
       )
     })
     return(
+
       <div>{posts}</div>
+
     )
   }
 }

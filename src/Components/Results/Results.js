@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {NavLink} from 'react-router-dom'
-import Search from '../Search/Search'
+// import Search from '../Search/Search'
 class Results extends Component {
 
  render(){
@@ -16,7 +16,6 @@ class Results extends Component {
    console.log(results);
    return (
      <div>
-       <Search />
        <p><NavLink exact to="/search">Go back to Search</NavLink></p>
        {results}
      </div>

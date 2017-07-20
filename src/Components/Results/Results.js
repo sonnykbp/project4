@@ -1,37 +1,23 @@
 import React, { Component } from 'react';
-// import Item from '../Item/Item'
+import {NavLink} from 'react-router-dom'
+import Search from '../Search/Search'
 class Results extends Component {
-  constructor(props){
-    super(props)
-    this.state = {
-      items: this.props.posts
-    }
-    console.log(props);
-  }
-  itemList(post){
-    return post.posts.map((item, index)=>{
-      console.log(item);
-      return (
-        <div>
-          {item.item_name}
-        </div>
-      )
-    })
-  }
+
  render(){
    let results = this.props.posts.map((post, indexKey) => {
 
        return(
         // <Item key={indexKey} item={this.itemList(post)} />
         <div key={indexKey}>
-        <p>{this.itemList(post)}</p>
+        <p>{post}</p>
         </div>
        )
    })
    console.log(results);
    return (
      <div>
-       <p><a href="/">Go back to Search</a></p>
+       <Search />
+       <p><NavLink exact to="/search">Go back to Search</NavLink></p>
        {results}
      </div>
    );

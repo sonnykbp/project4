@@ -46,6 +46,7 @@ class App extends Component {
             }}>Home</Link>
             <Link to="/categories">Swap</Link>
             <Link to="/about">About</Link>
+            <Link to="/search">Search</Link>
           </nav>
         </div>
 
@@ -53,7 +54,6 @@ class App extends Component {
             <Route
               exact path="/home"
               render={ () => {
-                // console.log(this.state.posts);
                 return(
                   <div>
                   <Home />
@@ -66,7 +66,6 @@ class App extends Component {
               render={ () => {
                 return(
                   <div>
-                  <SearchContainer posts={this.state.posts}/>
                   <Dashboard posts={this.state.posts}/>
                 </div>
                 )
@@ -75,6 +74,16 @@ class App extends Component {
             <Route
               exact path="/about"
               component={About}
+            />
+            <Route
+              exact path="/search"
+              render={ () => {
+                return(
+                  <div>
+                  <SearchContainer posts={this.state.posts}/>
+                </div>
+                )
+              }}
             />
             <Route
               exact path="/categories/:type"

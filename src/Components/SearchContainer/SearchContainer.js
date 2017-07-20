@@ -14,7 +14,6 @@ class SearchContainer extends Component {
       filteredPosts: [],
       query: ''
     }
-    console.log(this.state.posts);
     //preserve context(parent scope) of SearchContainer and handleSearchInput
     this.onSubmitQuery = this.onSubmitQuery.bind(this)
     this.handleSearchInput = this.handleSearchInput.bind(this)
@@ -29,21 +28,24 @@ class SearchContainer extends Component {
       })
       .reduce((a,c)=> [...a, ...c])
 
+    console.log(posts);
+
     let filteredPosts = posts.filter( post => post.includes(this.state.query.toLowerCase() ))
 
-    console.log(filteredPosts)
-    this.setState({filteredPosts},_=>console.log(this.state.filteredPosts))
-    console.log(posts);
+    this.setState({filteredPosts: filteredPosts})
+
+
   }
 
+
+
   handleSearchInput(e){
-    // console.log(this.state.query)
     this.setState({query: e.target.value})
 
   }
 
   render(){
-    const toRender = this.state.hasSearched ? <Results posts={this.state.posts} /> : <Search hasSearched={this.state.query} onSubmitQuery={this.onSubmitQuery}
+    const toRender = this.state.hasSearched ? <Results posts={this.state.filteredPosts} /> : <Search hasSearched={this.state.query} onSubmitQuery={this.onSubmitQuery}
     handleSearchInput={this.handleSearchInput}/>
 
     return (

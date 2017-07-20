@@ -10,7 +10,6 @@ class Home extends Component {
 
         <h2>Welcome to Swapt</h2>
         <div className="logo"></div>
-        <p> Get started with Swapt! Find an item. </p>
 
       </div>
 

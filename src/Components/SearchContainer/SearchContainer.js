@@ -4,13 +4,17 @@ import Results from '../Results/Results.js'
 
 
 class SearchContainer extends Component {
+
   constructor(props){
     super(props)
+
     this.state = {
       hasSearched: false,
       posts: this.props.posts,
+      filteredPosts: [],
       query: ''
     }
+    console.log(this.state.posts);
     //preserve context(parent scope) of SearchContainer and handleSearchInput
     this.onSubmitQuery = this.onSubmitQuery.bind(this)
     this.handleSearchInput = this.handleSearchInput.bind(this)
@@ -19,10 +23,21 @@ class SearchContainer extends Component {
   onSubmitQuery(e){
     e.preventDefault()
     this.setState({hasSearched: true})
+    const posts = this.state.posts
+      .map( board => {
+        return board.posts.map( post => post.item_name)
+      })
+      .reduce((a,c)=> [...a, ...c])
+
+    let filteredPosts = posts.filter( post => post.includes(this.state.query.toLowerCase() ))
+
+    console.log(filteredPosts)
+    this.setState({filteredPosts},_=>console.log(this.state.filteredPosts))
+    console.log(posts);
   }
 
   handleSearchInput(e){
-    console.log(this.state.query)
+    // console.log(this.state.query)
     this.setState({query: e.target.value})
 
   }

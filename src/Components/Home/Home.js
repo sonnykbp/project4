@@ -7,9 +7,11 @@ class Home extends Component {
     return(
       <div>
         <div className="home">
+
         <h2>Welcome to Swapt</h2>
-        <p> Cool things you can do with Swapt.</p>
         <div className="logo"></div>
+        <p> Get started with Swapt! Find an item. </p>
+
       </div>
 
       </div>

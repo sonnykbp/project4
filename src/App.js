@@ -34,13 +34,18 @@ class App extends Component {
     return (
       <Router>
         <div>
-          <nav className="navbar">
+          <div className="navbar">
+            <div className="logo-nav">
+            <Link to="/home">SWAPT</Link>
+          </div>
+          <nav className="nav">
             <Link to="/home">Home</Link>
             <Link to="/categories">Swap</Link>
             <Link to="/about">About</Link>
           </nav>
+        </div>
 
-          <main>
+          <main className="wrapper">
             <Route
               exact path="/home"
               render={ () => {

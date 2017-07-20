@@ -4,6 +4,9 @@ var mongoose = require("./db/connection");
 
 var app = express();
 
+const cors = require('cors')
+app.use(cors())
+
 var Category = mongoose.model("Category");
 var Post = mongoose.model("Post");
 

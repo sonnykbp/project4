@@ -36,19 +36,22 @@ class App extends Component {
       <Router>
         <div>
           <div className="navbar">
-            <div className="logo-nav">
-            <Link to="/home">SWAPT</Link>
+            <div className="logo-left">
+              <div className="logo-nav">
+
+              </div>
+              <Link to="/home">SWAPT</Link>
+            </div>
+            <nav className="nav">
+              <Link to={{
+                pathname: "/home",
+                state: { posts: this.state.posts }
+              }}>Home</Link>
+              <Link to="/categories">Swap</Link>
+              <Link to="/about">About</Link>
+              <Link to="/search">Search</Link>
+            </nav>
           </div>
-          <nav className="nav">
-            <Link to={{
-              pathname: "/home",
-              state: { posts: this.state.posts }
-            }}>Home</Link>
-            <Link to="/categories">Swap</Link>
-            <Link to="/about">About</Link>
-            <Link to="/search">Search</Link>
-          </nav>
-        </div>
 
           <main className="wrapper">
             <Route
@@ -56,8 +59,8 @@ class App extends Component {
               render={ () => {
                 return(
                   <div>
-                  <Home />
-                </div>
+                    <Home />
+                  </div>
                 )
               }}
             />
@@ -66,8 +69,8 @@ class App extends Component {
               render={ () => {
                 return(
                   <div>
-                  <Dashboard posts={this.state.posts}/>
-                </div>
+                    <Dashboard posts={this.state.posts}/>
+                  </div>
                 )
               }}
             />
@@ -80,8 +83,8 @@ class App extends Component {
               render={ () => {
                 return(
                   <div>
-                  <SearchContainer posts={this.state.posts}/>
-                </div>
+                    <SearchContainer posts={this.state.posts}/>
+                  </div>
                 )
               }}
             />

@@ -4,8 +4,8 @@
 .home {
   background-image: url('../../images/1.jpg');
   background-size: cover;
-  height: 600px;
-  box-shadow: 0px 0px 15px grey;
+  height: 700px;
+  box-shadow: 0px 0px 30px grey;
   margin-top: 50px;
   padding: 0;
   text-align: center;
@@ -15,6 +15,10 @@ h2 {
   margin: 20px;
   padding: 0;
   color: white;
+  padding-top: 80px;
+  padding-bottom: 15px;
+  font-size: 50px;
+
 }
 
 .logo{
@@ -23,4 +27,20 @@ h2 {
   height: 200px;
   width: 200px;
 
+}
+
+.home-description {
+  height: auto;
+  background-image: url('../../images/5.jpg');
+  background-size: cover;
+  box-shadow: 0px 0px 30px grey;
+}
+
+.home-description p{
+  font-family: 'Open Sans';
+  font-weight: bold;
+  color: #434752;
+  padding: 60px 100px 60px 100px;
+  font-size: 18px;
+  line-height: 30px;
 }

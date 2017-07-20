@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom"
+import './Dashboard.css'
 
 class Dashboard extends Component {
   render(){
@@ -7,17 +8,22 @@ class Dashboard extends Component {
       let showroute = `/categories/${post.type}`
       return(
 
-        <div key={indexKey}>
-          <p><NavLink exact to={{
-            pathname: showroute,
-            state: {type: post}
-          }}>{post.type}</NavLink></p>
+        <div  key={indexKey}>
+          <div  className="category-img">
+
+            <p><NavLink exact to={{
+              pathname: showroute,
+              state: {type: post}}}>{post.type}</NavLink></p>
+
+          </div>
         </div>
       )
     })
     return(
-
-      <div>{posts}</div>
+      <div className="dashboard">
+        <h3>Swapt Categories</h3>
+      <div className="container">{posts}</div>
+    </div>
 
     )
   }

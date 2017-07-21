@@ -1,13 +1,13 @@
-#FINAL PROJECT: SWAPT
+## FINAL PROJECT: SWAPT
 
 Swapt is trading platform where users can trade/swap items for free. Swapt aims to promote recycling/reusing everyday items in order to reduce waste and pollution.
 
 
-#TECHNOLOGIES
+## TECHNOLOGIES
 Swapt is a MERN stack app (MongoDB, Express JS, React JS, Node JS).
 
 
-#INSTALLATION
+## INSTALLATION
 
 - clone down repo
 - run $ yarn install
@@ -16,7 +16,7 @@ Swapt is a MERN stack app (MongoDB, Express JS, React JS, Node JS).
 - run $ yarn start
 
 
-#UNSOLVED PROBLEMS
+## UNSOLVED PROBLEMS
 
 - Full CRUD functionaliy
 - "Go back to search" button

@@ -13,12 +13,14 @@ import Home from './Components/Home/Home'
 import Post from './Components/Post/Post'
 import SinglePost from './Components/SinglePost/SinglePost'
 import SearchContainer from './Components/SearchContainer/SearchContainer'
+import Results from './Components/Results/Results'
 import './App.css'
 
 class App extends Component {
   constructor(props){
     super(props)
     this.state = {
+      hasSearched: true,
       posts: []
     }
   }
@@ -29,6 +31,13 @@ class App extends Component {
         posts: response.data
       })
     })
+  }
+
+  clearSearch() {
+    this.setState({
+      hasSearched: false
+    })
+    console.log(this.state.hasSearched);
   }
 
   render() {
@@ -88,6 +97,16 @@ class App extends Component {
                 )
               }}
             />
+            <Route
+  path="/results"
+  render={() => {
+    return(
+      <Results
+        clearSearch={() => this.clearSearch()}
+      />
+    )
+  }}
+/>
             <Route
               exact path="/categories/:type"
               component={Post}

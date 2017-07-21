@@ -1,3 +1,32 @@
 .about {
-  text-align: center;
+  display: flex;
+  margin: 30px;
+
+}
+
+.about-box {
+  margin: 20px;
+}
+
+.about-box h3{
+  color: #B7CDBF;
+}
+
+.about-box p {
+  line-height: 22px;
+  font-size: 14px;
+}
+
+p {
+  color: #565B6C;
+}
+
+@media only screen
+  and (min-width: 375px)
+  and (max-width: 800px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .about {
+    flex-wrap: wrap;
+  }
 }

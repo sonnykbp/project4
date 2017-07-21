@@ -11,15 +11,28 @@
   padding-top: 30px;
   color: #6F7482;
 }
+
+
+.item a {
+  text-decoration: none;
+  background: #6F7482;
+  padding: 10px 15px 10px 15px;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+}
 img.item-img {
   object-fit: cover;
 width: 600px;
 height: 350px;
+margin-top: 40px;
+border: 1px solid grey;
 }
 
 ul li{
   display: inline-block;
   padding: 10px;
+  margin-bottom: 15px;
 }
 
 em {

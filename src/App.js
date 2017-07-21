@@ -37,7 +37,7 @@ class App extends Component {
     this.setState({
       hasSearched: false
     })
-    console.log(this.state.hasSearched);
+    console.log("cleared~~~!", this.state.hasSearched);
   }
 
   render() {
@@ -92,7 +92,9 @@ class App extends Component {
               render={ () => {
                 return(
                   <div>
-                    <SearchContainer posts={this.state.posts}/>
+                    <SearchContainer posts={this.state.posts}
+                    clearSearch={() => this.clearSearch()}/>
+
                   </div>
                 )
               }}

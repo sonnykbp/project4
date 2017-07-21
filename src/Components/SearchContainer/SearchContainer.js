@@ -45,7 +45,7 @@ class SearchContainer extends Component {
   }
 
   render(){
-    const toRender = this.state.hasSearched ? <Results posts={this.state.filteredPosts} /> : <Search hasSearched={this.state.query} onSubmitQuery={this.onSubmitQuery}
+    const toRender = this.state.hasSearched ? <Results clearSearch={() => this.props.clearSearch()} posts={this.state.filteredPosts} /> : <Search hasSearched={this.state.query} onSubmitQuery={this.onSubmitQuery}
     handleSearchInput={this.handleSearchInput}/>
 
     return (

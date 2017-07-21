@@ -1,6 +1,6 @@
 .about {
   display: flex;
-  margin: 30px;
+  margin: 60px;
 
 }
 
@@ -9,7 +9,7 @@
 }
 
 .about-box h3{
-  color: #B7CDBF;
+  color: #6F7482;
 }
 
 .about-box p {

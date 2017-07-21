@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './SinglePost.css'
 
 class SinglePost extends Component {
   constructor(props){
@@ -9,11 +10,21 @@ class SinglePost extends Component {
   }
   render(){
     return(
-      <div>
-        <h2>{this.state.item.item_name}</h2>
-        <p>{this.state.item.description}</p>
-        <p>{this.state.item.location}</p>
-        <img src={this.state.item.image_url} alt="{this.state.item.item_name}"/>
+      <div className="item">
+        <div>
+          <div>
+          <h3>{this.state.item.item_name}</h3>
+          <ul>
+            <li><em>DESCRIPTION:</em> {this.state.item.description}</li>
+            <li><em>LOCATION:</em> {this.state.item.location}</li>
+          </ul>
+          <a href="mailto:inquery@swapt.com">Swap This!</a>
+        </div>
+
+          <div>
+          <img className="item-img" src={this.state.item.image_url} alt="{this.state.item.item_name}"/>
+        </div>
+        </div>
       </div>
     )
   }

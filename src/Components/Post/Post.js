@@ -28,7 +28,8 @@ class Post extends Component {
       )
     })
     return(
-      <div>
+      <div className="post">
+        <h3>{this.state.post.type} Items</h3>
         <div className="container">{singlepost}</div>
 
 

@@ -13,11 +13,27 @@
   text-align: center;
   border: 1px solid grey;
   margin: 20px;
+  background: white;
 }
 
+.post-box a {
+  text-decoration: none;
+  color: white;
+  padding: 15px;
+  background: #6F7482;
+}
 img.post-img {
   object-fit: cover;
 width: 300px;
 height: 250px;
 
+}
+.post {
+  text-align: center;
+}
+
+.post h3{
+  font-size: 28px;
+  padding-top: 30px;
+  color: #6F7482;
 }
